@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DCOSplitViewViewController">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <splitView arrangesAllSubviews="NO" dividerStyle="paneSplitter" translatesAutoresizingMaskIntoConstraints="NO" id="ZAQ-Oc-yLA">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                    <subviews>
+                        <customView id="uY6-np-2oX">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="128"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rEx-lE-j2A">
+                                    <rect key="frame" x="209" y="56" width="62" height="17"/>
+                                    <animations/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="First view" id="FoU-p3-jkF">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="rEx-lE-j2A" firstAttribute="centerY" secondItem="uY6-np-2oX" secondAttribute="centerY" id="8ea-Qu-aLy"/>
+                                <constraint firstItem="rEx-lE-j2A" firstAttribute="centerX" secondItem="uY6-np-2oX" secondAttribute="centerX" id="rPx-AD-E54"/>
+                            </constraints>
+                            <animations/>
+                        </customView>
+                        <customView id="lI5-Q3-09Y">
+                            <rect key="frame" x="0.0" y="138" width="480" height="134"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kpT-N0-FrE">
+                                    <rect key="frame" x="200" y="59" width="81" height="17"/>
+                                    <animations/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Second view" id="d9m-ae-grO">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="kpT-N0-FrE" firstAttribute="centerY" secondItem="lI5-Q3-09Y" secondAttribute="centerY" id="cNI-Bz-JQv"/>
+                                <constraint firstItem="kpT-N0-FrE" firstAttribute="centerX" secondItem="lI5-Q3-09Y" secondAttribute="centerX" id="qBR-Hm-TPI"/>
+                            </constraints>
+                            <animations/>
+                        </customView>
+                    </subviews>
+                    <animations/>
+                    <holdingPriorities>
+                        <real value="250"/>
+                        <real value="250"/>
+                    </holdingPriorities>
+                </splitView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ZAQ-Oc-yLA" secondAttribute="trailing" id="5EV-6P-FWz"/>
+                <constraint firstItem="ZAQ-Oc-yLA" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="Cbr-0N-Z3G"/>
+                <constraint firstItem="ZAQ-Oc-yLA" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="ULZ-M4-8tU"/>
+                <constraint firstAttribute="bottom" secondItem="ZAQ-Oc-yLA" secondAttribute="bottom" id="rWw-Lh-UFH"/>
+            </constraints>
+            <animations/>
+        </customView>
+    </objects>
+</document>
