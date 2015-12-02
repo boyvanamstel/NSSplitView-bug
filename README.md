@@ -1,4 +1,15 @@
-# Radar #22948078
+# Radar #22948078 (SOLVED)
+
+# Update, and solution:
+
+Apple came back to me with a fix. Apparently this is caused by an 'incompatibility between settings'. They provided two options to solve this:
+
+1. Enable the "Prefer coder" checkbox in the File inspector (for the NSSplitView). (We strongly recommend this.) 
+2. Enable the "Arranges All Subviews" checkbox in the attributes inspector for the split view.
+
+The first option did the trick.
+
+![Prefer coder](https://raw.github.com/boyvanamstel/NSSplitView-bug/master/Screenshots/fix.jpg)
 
 # Summary:
 When programatically adding an NSViewController containing an NSSplitView to a view, the NSSplitView will look distorted and won't listen to Auto Layout and autoresizingMask rules.
